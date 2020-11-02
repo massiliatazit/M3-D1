@@ -19,9 +19,9 @@ function check(num1, num2) {
 
   if (num1 === 50 || num2 === 50 || sum === 50) {
     return true;
-  } else {
-    return false;
   }
+    return false;
+  
 }
 console.log("#2", check(50, 30));
 /*
@@ -136,11 +136,11 @@ function containselement(arr) {
     if(arr.includes(1)||arr.includes(3)){
 
         return true;
-    }else{
+    }
         return false;
     }
     
-}
+
 console.log( '#9',containselement([3,8]))
 /*
 10)
@@ -247,13 +247,38 @@ Create a function to check two given numbers and return true if one of the numbe
 16)
 Create a function to check from two given integers, whether one is positive and another one is negative.
 */
+function postive_or_negative(num1,num2){
+    if((num1>0 && num2<0) ||(num1<0 && num2>0) ){
+      return true;
+    }
+        
+    return false;
+    
+
+}
+console.log("#16",postive_or_negative(-3,1))
 /*
 17)
 Create a function to create new string with first 3 characters are in lower case and the others in upper case. If the string length is less than 3 convert all the characters in upper case. 
 */
+function createString(str){
+ 
+  
+  if(str.length<3){
+    return str.toUpperCase()
+
+  }
+  return str = ((str.slice(0,4).toLowerCase() )+ (str.slice(4).toUpperCase()))
+  
+}
+console.log('#17',createString('strive'))
+
 /*
 18)
-Create a function to calculate the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.
+Create a function to calculate the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80. */
+
+
+/*
 19)
 Create a function to convert a number to a string, the contents of which depend on the number's factors. Follow next example:
 If the number has 3 as a factor, output 'Diego'.
@@ -268,7 +293,7 @@ this would be a "DiegoRiccardo".
 34 has four factors: 1, 2, 17, and 34.
 this would be "34".
 */
-function factors(/*i've become so*/numb) {
+function factors(numb) {
     let str ='';
     if(numb % 3===0 ){
          str = str + 'Diego';
