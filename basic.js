@@ -11,12 +11,24 @@ Create a function to calculate the sum of the two given integers. If the two val
     }
     
 }
-console.log(sumintegers(3,3));
+console.log('#1',sumintegers(3,3));
 /*
 2)
 Create a function to check two given numbers and return true if one of the number is 50 or if their sum is 50.
 */
+ function check(num1,num2) {
+     const sum = num1+num2;
 
+     if((num1===50) ||( num2===50)||(sum===50)){
+         return true;
+
+     }else{
+         return false;
+     }
+
+    
+}
+console.log('#2',check(50,30));
 /*
 3)
 Create a function to remove a character at the specified position of a given string and return the new string.
