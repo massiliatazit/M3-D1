@@ -5,13 +5,13 @@ Create a function to calculate the sum of the two given integers. If the two val
  function sumintegers(a,b) {
 
     if(a===b){
-        return 3(a+b);
+        return (3*(a+b));
     }else{
         return (a+b);
     }
     
 }
-sumintegers(3,3)
+console.log(sumintegers(3,3));
 /*
 2)
 Create a function to check two given numbers and return true if one of the number is 50 or if their sum is 50.
